@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="body-header">Notes</div>
+    <div class="body-container">
+        <div class="buttons-bar">
+            <Button id="btn1" onclick="openModal(1)">Add Note</Button>
+            <Button id="btn2" onclick="openModal(2)">Add Note</Button>
+            <Button id="btn3" onclick="openModal(3)">Add Note</Button>
+        </div>
+        <div class="content">
+
+            <div class="panel panel1">
+
+                <div class="list" id='1'></div>
+            </div>
+            <div class="panel panel2">
+
+                <div class="list" id='2'></div>
+            </div>
+            <div class="panel panel3">
+
+                <div class="list" id='3'></div>
+            </div>
+        </div>
+
+
+        <!-- Icons-->
+        <svg xmlns="http://www.w3.org/2000/svg" class="icons" style="display: none;">
+            <symbol id="i-like" viewBox="0 0 32 32">
+                <path
+                    d="M4 16 C1 12 2 6 7 4 12 2 15 6 16 8 17 6 21 2 26 4 31 6 31 12 28 16 25 20 16 28 16 28 16 28 7 20 4 16 Z" />
+            </symbol>
+            <symbol id="i-trash" viewBox="0 0 32 32">
+                <path
+                    d="M28 6 L6 6 8 30 24 30 26 6 4 6 M16 12 L16 24 M21 12 L20 24 M11 12 L12 24 M12 6 L13 2 19 2 20 6" />
+            </symbol>
+        </svg>
+
+        <!-- Modal-->
+        <div class="modal-container" id="modal-id">
+            <div class="modal-body">
+                <textarea name="" id="modal-textarea-id" cols="30" rows="10"></textarea>
+            </div>
+            <div class="modal-footer">
+                <button onclick="appendCard()">Add</button>
+                <button onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+.action-button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+  padding: 5px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 50%;
+}
+
+@media only screen and (max-width: 900px) {
+  .footer {
+    width: 90%;
+  }
+}
+
+.body-header {
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: xx-large;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  padding: 4%;
+  height: 100%;
+  flex-direction: row;
+}
+
+.panel {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1 1 30%; /*grow | shrink | basis */
+  height: 100%;
+}
+
+#btn1,
+.content-1 {
+  background-color: #c44900;
+  color: #fff;
+}
+
+#btn2,
+.content-2 {
+  background-color: #fce762;
+}
+
+#btn3,
+.content-3 {
+  background-color: #0c1b33;
+  color: #fff;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  display: none;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  top: 0;
+}
+
+.buttons-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.like-counter {
+  height: 30px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+.like-counter > svg {
+  width: 30px;
+}
+
+.like-count {
+  padding: 10px;
+  font-family: cursive;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+            supported by Chrome, Edge, Opera and Firefox */
+}
+
+body {
+  background: url(background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
